@@ -1,0 +1,23 @@
+Here are three functional tests:
+
+#1  This shows what happens when it works:
+
+curl -X POST http://127.0.0.1:5050/api/v1/resources/fibonacci -d "InputValue='7'"
+
+
+The Fibonacci sequence for the number you entered is 0, 1, 1, 2, 3, 5, 8,
+                                                                       
+
+#2  This shows what happens when you enter a negative number in the POST's payload:
+
+curl -X POST http://127.0.0.1:5050/api/v1/resources/fibonacci -d "InputValue='-1'"
+
+Please enter an integer higher than 1.  
+
+
+#3  This shows what happens when you enter a letter (or non-number) in the POST's payload:
+
+
+curl -X POST http://127.0.0.1:5050/api/v1/resources/fibonacci -d "InputValue='12x45'"
+
+You did not enter an integer.  Please only enter integers greater than 1.
