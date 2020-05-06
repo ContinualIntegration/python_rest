@@ -1,0 +1,11 @@
+Run these four commands:
+
+sudo apt -y update
+sudo apt -y install python3 python3-pip 
+sudo pip3 install flask
+python3 pyrest.py
+
+From another terminal run this:  
+
+curl -X POST http://127.0.0.1:5050/api/v1/resources/fibonacci -d "InputValue='7'"
+
