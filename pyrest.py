@@ -2,6 +2,8 @@
 # https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask
 # Most of the consumer() function below was taken from this site:
 # https://www.programiz.com/python-programming/examples/fibonacci-sequence
+# This will only be available on the 127.0.0.1 IP address from the server it is running on.
+# You could change 127.0.0.1 to 0.0.0.0. Then it would be available to external web taffic, but this is not a secure way of doing it.
 
 import flask
 import json
@@ -79,4 +81,4 @@ Please enter an integer higher than 1.                   \
                           "
         return data
 
-app.run(host="0.0.0.0", port="5050")
+app.run(host="127.0.0.1", port="5050")
