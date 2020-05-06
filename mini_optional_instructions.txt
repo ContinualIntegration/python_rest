@@ -1,4 +1,4 @@
-Run these four commands:
+If you have a Debian distribution of Linux, run these four commands:
 
 sudo apt -y update
 sudo apt -y install python3 python3-pip 
