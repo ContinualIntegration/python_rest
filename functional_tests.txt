@@ -5,7 +5,7 @@ Here are three functional tests:
 curl -X POST http://127.0.0.1:5050/api/v1/resources/fibonacci -d "InputValue='7'"
 
 
-The Fibonacci sequence for the number you entered is 0, 1, 1, 2, 3, 5, 8,
+The Fibonacci sequence for the number you entered is 0, 1, 1, 2, 3, 5, 8
                                                                        
 
 #2  This shows what happens when you enter a negative number in the POST's payload:
