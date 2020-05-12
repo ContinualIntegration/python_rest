@@ -43,7 +43,7 @@ def consumer():
     n1 = 0
     n2 = 1
     count = 0
-    builder = 0
+    builder = [0]
     if request.method == 'POST':
         stest = str(request.form['InputValue'][1:-1])
         if (stest[0] == '-'):
@@ -61,19 +61,18 @@ def consumer():
           else:
              print("Fibonacci sequence:")
              while count < nterms:
-                 print(n1)
                  nth = n1 + n2
                  # update values
                  n1 = n2
                  n2 = nth
                  count += 1
-                 builder = str(builder) + ", " + str(n1)
 
-          if builder != 0:
+                 builder.append(str(n1))
+
+          builder = str(builder)
+          if len(builder) > 1:
               data = '''
-
-The Fibonacci sequence for the number you entered is ''' + builder[0:-3] + '''
-
+The Fibonacci sequence for the number you entered is ''' + builder[0:-1] + "]" + '''
                                                                        '''
           else:
             data = "  \
