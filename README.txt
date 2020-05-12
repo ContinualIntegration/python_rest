@@ -18,7 +18,7 @@ Usage instructions:
 curl -X POST http://127.0.0.1:5050/api/v1/resources/fibonacci -d "InputValue='6'"
 
 You should replace 127.0.0.1 if you are not on the server running the pyrest.py program with the IP address of the server that is 
-running pyrest.py.  (You could replace 5050 with the port you assigned in the program.)  The "6" should be replaced with the number 
-of Fibonacci numbers you want to display.
+running pyrest.py.  (You could replace 5050 with the port you assigned in the program.)  The "6" should be replaced with the 
+number of Fibonacci numbers you want to display.
 
 3.  Run the command you just drafted.
