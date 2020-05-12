@@ -13,7 +13,13 @@ Usage instructions:
 
 1.  Run the program like this: python3 pyrest.py
 
-2.  From another Linux terminal draft a curl command like this:
+2.   Either start a duplicate terminal or do these two sub-steps. 
+(These two commands will temporarily suspend then resume the python program in the background the process):
+
+Ctrl-z  (hold control and tap "z")
+bg 1   # Enter "bg" and the integer associated with the suspended command above.  Normally it will be "1".
+
+3.  You should be at a prompt now (regardless of how you did step #2 above).  Draft a curl command like this:
 
 curl -X POST http://127.0.0.1:5050/api/v1/resources/fibonacci -d "InputValue='6'"
 
@@ -21,4 +27,4 @@ You should replace 127.0.0.1 if you are not on the server running the pyrest.py 
 running pyrest.py.  (You could replace 5050 with the port you assigned in the program.)  The "6" should be replaced with the 
 number of Fibonacci numbers you want to display.
 
-3.  Run the command you just drafted.
+4.  Run the command you just drafted.
