@@ -66,7 +66,6 @@ def consumer():
                  n1 = n2
                  n2 = nth
                  count += 1
-
                  builder.append(str(n1))
 
           builder = str(builder)
